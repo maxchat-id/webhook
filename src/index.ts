@@ -1,3 +1,5 @@
+import "dotenv-defaults/config";
+
 import { app as App } from "./app";
 import { logger } from "./middleware/logger";
 import { whitelist } from "./middleware/whitelist";
