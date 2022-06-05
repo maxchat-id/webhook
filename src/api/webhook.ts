@@ -3,10 +3,10 @@ import axios from "axios"
 
 import { bodyParser, jsonResponse } from "../utils";
 
-export const webhookPostHandler = async (req: Request, res: Response) => {
+export const webhookGupshupHandler = async (req: Request, res: Response) => {
   const body = await bodyParser(req);
   const payload = JSON.parse(body)
-  console.log("Webhook", "incoming message", payload);
+  console.log("Gupshup", payload);
 
   const forwardUrl = process.env.FORWARD_URL;
 
